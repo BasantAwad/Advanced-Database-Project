@@ -3,46 +3,43 @@
 ## Project Overview
 This project implements the External Merge Sort algorithm to efficiently sort a large dataset of employee records stored across multiple files. The dataset consists of 16 files, each containing 1,000 employee records, totaling 16,000 records.
 
-## Objectives
-- Implement the External Merge Sort algorithm in Java.
-- Design a data structure for employee records, including fields such as employee ID, name, department, and salary.
-- Generate random employee records and store them in multiple files.
-- Provide utility functions for file handling, sorting, and merging.
-- Measure and analyze the time complexity of sorting and merging operations.
+## Features
+- Sorts employee records by **Employee ID**, **Salary**, **Department (then Salary)**, or **First Name Initial**.
+- Outputs four sorted files:  
+  - `sorted_by_id.csv`  
+  - `sorted_by_salary.csv`  
+  - `sorted_by_department.csv`  
+  - `sorted_by_firstname_initial.csv`
+- Handles datasets too large to fit in memory using external sorting techniques.
 
 ## Project Structure
 - **src/**: Contains the source code files.
-  - **Main.java**: Entry point of the application.
-  - **Employee.java**: Defines the Employee class with relevant fields and methods.
-  - **EmployeeGenerator.java**: Generates random employee records and writes them to files.
+  - **Employee.java**: Defines the Employee class.
   - **EmployeeFileUtils.java**: Utility functions for file operations.
-  - **InMemorySorter.java**: Implements an in-memory sorting algorithm.
-  - **ExternalMergeSort.java**: Implements the External Merge Sort algorithm.
-  - **constants/SortCriterion.java**: Defines constants for sorting criteria.
-  
-- **data/**: Directory containing 16 employee record files.
-
-- **tests/**: Contains unit tests for various components of the project.
-  - **EmployeeTest.java**: Tests for the Employee class.
-  - **EmployeeGeneratorTest.java**: Tests for the EmployeeGenerator class.
-  - **EmployeeFileUtilsTest.java**: Tests for the EmployeeFileUtils class.
-  - **InMemorySorterTest.java**: Tests for the InMemorySorter class.
-  - **ExternalMergeSortTest.java**: Tests for the ExternalMergeSort class.
-
-- **README.md**: Documentation for the project.
-
-- **report.md**: Summary of the project, including algorithm rationale, implementation details, and performance evaluation.
+  - **InMemorySorter.java**: In-memory sorting logic.
+  - **ExternalMergeSort.java**: External Merge Sort implementation.
+  - **constants/SortCriterion.java**: Constants for sorting criteria.
+- **Data/**: Directory containing 16 employee record files and output files.
+- **README.md**: Project documentation.
+- **report.md**: Project summary and evaluation.
+- **DATABASE.md**: Database and data structure explanation.
 
 ## Setup Instructions
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Compile the Java files using a Java compiler.
-4. Run the `Main` class to execute the External Merge Sort process.
+1. Place your 16 `.csv` employee data files in the `Data` folder.
+2. Compile the Java source files:
+   ```sh
+   javac -d bin src/*.java
+   ```
+3. Run the main class:
+   ```sh
+   java -cp bin ExternalMergeSort
+   ```
+4. The sorted outputs will be written to the `Data` folder as described above.
 
 ## Usage Guidelines
-- The program will automatically generate employee records and store them in the `data` directory.
-- The sorting will be performed based on the specified criterion (e.g., Employee ID or Last Name).
-- The sorted records will be written back to the files in the `data` directory.
+- The program reads all employee records from the `Data` directory.
+- Sorting is performed for each criterion, and results are written to separate output files.
+- No external libraries are required.
 
 ## Conclusion
 This project demonstrates the implementation of the External Merge Sort algorithm for handling large datasets efficiently. The modular design allows for easy testing and maintenance, ensuring that the sorting process is both effective and scalable.
