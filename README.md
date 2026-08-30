@@ -1,4 +1,13 @@
-<p align="center"><img src="https://raw.githubusercontent.com/BasantAwad/BasantAwad/main/assets/profile-terminal.svg" alt="Animated terminal profile for Basant Awad Mohamed" width="100%" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/BasantAwad/BasantAwad/main/assets/introduction-banner.svg" alt="Terminal-inspired project banner" width="100%" /></p>
+
+<!-- terminal-badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Algorithms-8B5CF6?style=flat-square&logo=java&logoColor=white" alt="Algorithms" />
+  <img src="https://img.shields.io/badge/External%20Sort-06B6D4?style=flat-square&logo=files&logoColor=111827" alt="External Sort" />
+</p>
+
+<p align="center"><img src="https://raw.githubusercontent.com/BasantAwad/BasantAwad/main/assets/introduction-banner.svg" alt="Animated terminal profile for Basant Awad Mohamed" width="100%" /></p>
 
 # External Merge Sort for Large Employee Records
 
