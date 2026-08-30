@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/BasantAwad/BasantAwad/main/assets/basant-terminal-banner.png" alt="Terminal-inspired project banner" width="100%" />
+</p>
+
 # External Merge Sort for Large Employee Records
 
 A Java implementation of external merge sort for employee records that do not fit comfortably in memory. The project compares sorting criteria and writes reproducible CSV outputs for each result.
